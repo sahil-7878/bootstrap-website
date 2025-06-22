@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Cart</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css">
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/images/Logo/logo.png">
+</head>
+
+<body class="animation-fade-in">
+  <header>
+    <div class="w-100 h-100 position-absolute  z-1 opacity-50 "></div>
+
+    <nav class="navbar navbar-expand-lg px-5">
+      <div class="container-fluid">
+        <a href="./index.html" class="nav-brand nav-logo">
+          <img src="assets/images/Logo/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <ul class="navbar-nav mx-auto fw-semibold">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link text-light"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a href="./shop.html" class="nav-link text-light"> Shop </a>
+            </li>
+            <li class="nav-item">
+              <a href="./service.html" class="nav-link text-light"> Services </a>
+            </li>
+            <li class="nav-item">
+              <a href="./about.html" class="nav-link text-light"> About </a>
+            </li>
+            <li class="nav-item">
+              <a href="./contact.html" class="nav-link text-light"> Contact </a>
+            </li>
+            <li class="nav-item">
+              <a href="cart.html" class="nav-link text-light"> Cart </a>
+            </li>
+          </ul>
+        </div>
+        <div class="login-detail d-none d-lg-block">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item ">
+              <a href="#" class=" text-light  px-1 " data-bs-toggle="offcanvas" data-bs-target="#offcanvas"><i
+                  class="bi bi-search"></i></a>
+            </li>
+            <li class="list-inline-item ">
+              <a href="./account.html" class=" text-light  px-1" data-bs-toggle="modal" data-bs-target="#login"><i
+                  class="bi bi-person position-relative"></i></a>
+            </li>
+            <li class="list-inline-item ">
+              <a href="#" class="position-relative text-light px-1" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvas-end"><i class="bi bi-basket3"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container py-5 text-white">
+    <h1 class="text-center mb-4">Your Cart</h1>
+    <div class="row">
+      <!-- Cart Items -->
+      <div class="col-md-8">
+        <div class="card mb-3">
+          <div class="card-body-n">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <h3 class="gold-text">Luxury Sofa</h3>
+                <p class="mb-0 text-white">Quantity: 1</p>
+              </div>
+              <div>
+                <h3 class="gold-text">$1200</h3>
+                <button class="btn btn-danger btn-sm">Remove</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-body-n">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <h3 class="gold-text">Premium Dining Table</h3>
+                <p class="mb-0 text-white">Quantity: 2</p>
+              </div>
+              <div>
+                <h3 class="gold-text">$2500</h3>
+                <button class="btn btn-danger btn-sm">Remove</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Checkout Section -->
+      <div class="col-md-4">
+        <div class="card-n">
+          <div class="card-body-n">
+            <h3 class="gold-text mb-4">Checkout</h3>
+            <form id="checkoutForm">
+              <div class="mb-3">
+                <label for="name" class="form-label text-white">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label text-white">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label text-white">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+              </div>
+              <div class="mb-3">
+                <label for="address" class="form-label text-white">Shipping Address</label>
+                <textarea class="form-control" id="address" rows="3" placeholder="Enter your address"
+                  required></textarea>
+                <button type="button" class="btn btn-gold btn-sm mt-2">Add This Location</button>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-gold btn-lg">Place Order</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer bg-dark text-light py-5 text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-center text-md-center pe-5">
+          <h3 class="footer-logo">Furniture Hub</h3>
+          <p>Subscribe to Our Newsletter:</p>
+          <p>Receive Updates on New Arrivals and Special Promotions!</p>
+          <form class="d-flex">
+            <input type="email" class="form-control me-2 plc-white" placeholder="Your email here">
+            <button class="btn btn-warning">Submit</button>
+          </form>
+          <div class="social-icons mt-3">
+            <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="me-2"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <h5>Categories</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light">Chairs</a></li>
+            <li><a href="#" class="text-light">Tables</a></li>
+            <li><a href="#" class="text-light">Sofas</a></li>
+            <li><a href="#" class="text-light">Beds</a></li>
+            <li><a href="#" class="text-light">Cabinets</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h5>Shopping</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light">Payments</a></li>
+            <li><a href="#" class="text-light">Delivery options</a></li>
+            <li><a href="#" class="text-light">Buyer protection</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h5>Customer Care</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light">Help center</a></li>
+            <li><a href="#" class="text-light">Terms & Conditions</a></li>
+            <li><a href="#" class="text-light">Privacy Policy</a></li>
+            <li><a href="#" class="text-light">Returns & Refund</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h5>Pages</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light">About Us</a></li>
+            <li><a href="#" class="text-light">Shop</a></li>
+            <li><a href="#" class="text-light">Contact Us</a></li>
+            <li><a href="#" class="text-light">Services</a></li>
+            <li><a href="#" class="text-light">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="bg-light">
+      <div class="text-center">© 2025 Furniture Hub. All rights reserved</div>
+    </div>
+  </footer>
+  <div class="offcanvas offcanvas-top h-100 bg-black" id="offcanvas">
+    <div class="offcanvas-body d-flex align-items-center w-100 h-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-10">
+            <form action="" method="">
+              <input type="search" class="form-control" placeholder="Search Here....">
+            </form>
+          </div>
+          <div class="col-1 py-1" data-bs-theme="dark">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvas-end" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping Cart</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body text-center ">
+      <h4>Empty cart</h4>
+      <p class="text-light">No products in the cart.</p>
+      <button type="button" class="btn btn-warning text-light" data-bs-dismiss="offcanvas">Back to Home</button>
+    </div>
+  </div>
+  <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    data-bs-theme="dark">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-3">
+          <div class="col">
+            <div class="card text-white bg-dark p-3">
+              <h3 class="text-center">Login</h3>
+              <form>
+                <div class="mb-3">
+                  <label class="form-label ps-3">Email</label>
+                  <input type="email" class="form-control" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label  ps-3">Password</label>
+                  <input type="password" class="form-control" placeholder="Enter your password">
+                </div>
+                <button type="submit" class="btn btn-primary w-100"> <a href="index.html"
+                    class="text-white text-decoration-none"> Login </a></button>
+              </form>
+              <p class="text-center mt-3">Don't have an account? <a href="#signup" data-bs-toggle="modal"
+                  class="text-white" data-bs-target="#signup">Sign up</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    data-bs-theme="dark">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="col p-3">
+            <div class="card text-white bg-dark p-3">
+              <h3 class="text-center">Sign Up</h3>
+              <form>
+                <div class="mb-3">
+                  <label class="form-label p-3">Full Name</label>
+                  <input type="text" class="form-control" placeholder="Enter your full name">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label p-3">Email</label>
+                  <input type="email" class="form-control" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label p-3">Password</label>
+                  <input type="password" class="form-control " placeholder="Create a password">
+                </div>
+                <button type="submit" class="btn btn-primary w-100 p-3">Sign Up</button>
+              </form>
+              <p class="text-center mt-3">Already have an account? <a href="#login" data-bs-toggle="modal"
+                  class="text-white">Login</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive"
+      aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          Order Placed Successfully!
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+          aria-label="Close"></button>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+      // Show a Notification
+      const checkoutForm = document.getElementById('checkoutForm');
+      const toast = new bootstrap.Toast(document.getElementById('toast'));
+
+      checkoutForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        toast.show();
+      });
+
+      function addLocation() {
+        alert('Location added successfully!');
+      }
+    </script>
+</body>
+
+</html>

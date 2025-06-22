@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Product Details</title>
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/Logo/logo.png">
+</head>
+
+<body>
+    <header>
+        <div class="w-100 h-100 position-absolute  z-1 opacity-50 "></div>
+
+        <nav class="navbar navbar-expand-lg px-5">
+            <div class="container-fluid">
+                <a href="./index.html" class="nav-brand nav-logo">
+                    <img src="assets/images/Logo/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-toggler">
+                    <ul class="navbar-nav mx-auto fw-semibold">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link text-light"> Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./shop.html" class="nav-link text-light"> Shop </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./service.html" class="nav-link text-light"> Services </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./about.html" class="nav-link text-light"> About </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./contact.html" class="nav-link text-light"> Contact </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cart.html" class="nav-link text-light"> Cart </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="login-detail d-none d-lg-block">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item ">
+                            <a href="#" class=" text-light  px-1 " data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvas"><i class="bi bi-search"></i></a>
+                        </li>
+                        <li class="list-inline-item ">
+                            <a href="./account.html" class=" text-light  px-1" data-bs-toggle="modal"
+                                data-bs-target="#login"><i class="bi bi-person position-relative"></i></a>
+                        </li>
+                        <li class="list-inline-item ">
+                            <a href="#" class="position-relative text-light px-1" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvas-end"><i class="bi bi-basket3"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Toast Notification -->
+    <div class="toast-container position-fixed top-0 start-50 translate-middle-x p-3 w-25">
+        <div id="cartToast" class="toast w-100 align-items-center text-white bg-success border-0" role="alert"
+            aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <i class="fas fa-check-circle me-2"></i>
+                    Product successfully added to cart!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                    aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stylish Back Button -->
+    <div class="container mt-4">
+        <a href="index.html"
+            class="btn btn-lg rounded-pill shadow-sm back-home-btn position-relative text-black overflow-hidden border-0 fw-bold">
+            <i class="fas fa-arrow-left me-2"></i> Back to Home
+        </a>
+    </div>
+
+    <!-- Product Details -->
+    <div class="container product-container">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators overflow-hidden">
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner rounded-4 overflow-hidden">
+                        <div class="carousel-item item active overflow-hidden">
+                            <img src="assets/images/product/product-1.avif" class="d-block w-100"
+                                alt="Luxury Wooden Chair Front View">
+                        </div>
+                        <div class="carousel-item item overflow-hidden">
+                            <img src="assets/images/product/product-slid-2.avif" class="d-block w-100"
+                                alt="Luxury Wooden Chair Side View">
+                        </div>
+                        <div class="carousel-item item overflow-hidden">
+                            <img src="assets/images/product/product-slide-3.avif" class="d-block w-100"
+                                alt="Luxury Wooden Chair Detail View">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel"
+                        data-bs-slide="prev" title="Previous Slide">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel"
+                        data-bs-slide="next" title="Next Slide">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <!-- Add Reviews Section Here -->
+                <div class="reviews-section mt-4">
+                    <h4 class="mb-3">Customer Reviews</h4>
+                    <div class="overall-rating mb-3">
+                        <div class="d-flex align-items-center">
+                            <div class="ratings me-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gold">(4.5/5 - 143 reviews)</span>
+                        </div>
+                    </div>
+                    <!-- Review Card 1 -->
+                    <div class="review-card mb-3 p-3"
+                        style="background: rgba(255, 255, 255, 0.03); border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle me-2"
+                                width="40" height="40" alt="Reviewer">
+                            <div>
+                                <h6 class="mb-0 text-white">Rajesh Kumar</h6>
+                                <div class="ratings small">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <small class="ms-auto text-gold">2 days ago</small>
+                        </div>
+                        <p class="mb-2 text-white">Absolutely stunning piece of furniture! The craftsmanship is
+                            exceptional and it fits perfectly in my living room.</p>
+                    </div>
+                    <!-- Review Card 2 -->
+                    <div class="review-card mb-3 p-3"
+                        style="background: rgba(255, 255, 255, 0.03); border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle me-2"
+                                width="40" height="40" alt="Reviewer">
+                            <div>
+                                <h6 class="mb-0 text-white">Priya Sharma</h6>
+                                <div class="ratings small">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <small class="ms-auto text-gold">1 week ago</small>
+                        </div>
+                        <p class="mb-2 text-white">The quality is amazing and the comfort level is beyond expectations.
+                            Worth every penny!</p>
+                    </div>
+                    <!-- Review Card 3 -->
+                    <div class="review-card mb-3 p-3"
+                        style="background: rgba(255, 255, 255, 0.03); border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" class="rounded-circle me-2"
+                                width="40" height="40" alt="Reviewer">
+                            <div>
+                                <h6 class="mb-0 text-white">Amit Patel</h6>
+                                <div class="ratings small">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                            <small class="ms-auto text-gold">2 weeks ago</small>
+                        </div>
+                        <p class="mb-2 text-white">Elegant design and superior build quality. The customer service was
+                            excellent too!</p>
+                    </div>
+                    <button class="btn btn-outline-primary w-100" style="background: rgba(212, 175, 55, 0.1);">
+                        View All Reviews <i class="fas fa-chevron-right ms-2"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-6 product-details">
+                <h2 class="mb-3">Luxury Wooden Lounge Chair</h2>
+                <div class="price-tag">₹24,999</div>
+                <div class="d-flex align-items-center mb-3">
+                    <div class="ratings">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                    </div>
+                    <span class="ms-2">(4.5/5 - 143 reviews)</span>
+                </div>
+
+                <p class="lead">A premium handcrafted wooden lounge chair that combines comfort with elegant design,
+                    perfect for any modern living space.</p>
+
+                <div class="features-list">
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>Premium solid teak wood construction</li>
+                        <li>Ergonomic design with curved backrest</li>
+                        <li>High-density foam cushioning with premium fabric</li>
+                        <li>Hand-finished with natural oils for a rich luster</li>
+                        <li>Dimensions: 75cm x 68cm x 90cm (W x D x H)</li>
+                        <li>Weight capacity: 180 kg</li>
+                        <li>Made by master craftsmen with 30+ years experience</li>
+                        <li>5-year manufacturer warranty</li>
+                    </ul>
+                </div>
+
+                <div class="mb-4">
+                    <h5>Available Colors:</h5>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-sm rounded-circle p-3" style="background-color: #8B4513;"
+                            title="Walnut Brown"></button>
+                        <button class="btn btn-sm rounded-circle p-3" style="background-color: #3c3c3c;"
+                            title="Ebony Black"></button>
+                        <button class="btn btn-sm rounded-circle p-3" style="background-color: #DEB887;"
+                            title="Natural Oak"></button>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                    <button class="btn btn-primary" onclick="addToCart()"><i class="fas fa-shopping-cart me-2"></i>Add
+                        to Cart</button>
+                    <button class="btn btn-outline-primary">Buy Now</button>
+                    <button class="btn btn-outline-secondary">
+                        <i class="fa fa-heart"></i> Add to Wishlist
+                    </button>
+                </div>
+
+                <div class="delivery-info p-3 bg-light rounded mb-3">
+                    <p class="mb-1 text-black"><i class="fas fa-truck me-2"></i> Free delivery for orders above ₹10,000
+                    </p>
+                    <p class="mb-1 text-black"><i class="fas fa-box me-2"></i> Easy 30-day returns</p>
+                    <p class="mb-0 text-black"><i class="fas fa-shield-alt me-2"></i> 5-year warranty</p>
+                </div>
+
+                <div class="mt-4">
+                    <h5>Share this product:</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="description-tab" data-bs-toggle="tab"
+                            data-bs-target="#description" type="button" role="tab" aria-controls="description"
+                            aria-selected="true">Description</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="specifications-tab" data-bs-toggle="tab"
+                            data-bs-target="#specifications" type="button" role="tab" aria-controls="specifications"
+                            aria-selected="false">Specifications</button>
+                    </li>
+                </ul>
+                <div class="tab-content p-4 bg-white rounded-bottom" id="productTabContent">
+                    <div class="tab-pane fade show active" id="description" role="tabpanel"
+                        aria-labelledby="description-tab">
+                        <h4>Product Description</h4>
+                        <p>Our Luxury Wooden Lounge Chair represents the pinnacle of furniture craftsmanship. Each piece
+                            is meticulously handcrafted by our master artisans who have honed their skills over
+                            generations.</p>
+                        <p>The chair features a harmonious blend of traditional woodworking techniques and modern design
+                            principles. The curved backrest follows the natural contour of your spine, providing
+                            exceptional comfort even during extended periods of use.</p>
+                        <p>We source our teak from sustainable forests, ensuring each chair not only brings beauty to
+                            your home but also represents responsible environmental stewardship. The wood is dried
+                            naturally for 24 months before being hand-selected for each chair.</p>
+                        <p>The cushions are filled with high-density foam that maintains its shape and comfort for
+                            years. The premium fabric covering is stain-resistant and available in multiple colors to
+                            match your interior design preferences.</p>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                                    class="img-fluid rounded" alt="Living room setting with chair">
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="mt-3 mt-md-0">Perfect for any setting</h5>
+                                <p>Whether placed in your living room, study, or bedroom, this chair makes a statement
+                                    about your appreciation for quality and design. Its versatile aesthetic complements
+                                    both traditional and contemporary interior styles.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="specifications" role="tabpanel" aria-labelledby="specifications-tab">
+                        <h4>Technical Specifications</h4>
+                        <table class="table table-striped text-white">
+                            <tbody>
+                                <tr>
+                                    <th>Dimensions</th>
+                                    <td>75cm (W) x 68cm (D) x 90cm (H)</td>
+                                </tr>
+                                <tr>
+                                    <th>Weight</th>
+                                    <td>15 kg</td>
+                                </tr>
+                                <tr>
+                                    <th>Weight Capacity</th>
+                                    <td>180 kg</td>
+                                </tr>
+                                <tr>
+                                    <th>Materials</th>
+                                    <td>Solid teak wood, high-density foam, premium upholstery fabric</td>
+                                </tr>
+                                <tr>
+                                    <th>Assembly</th>
+                                    <td>Minimal assembly required (legs attachment)</td>
+                                </tr>
+                                <tr>
+                                    <th>Care Instructions</th>
+                                    <td>Wipe wood with damp cloth; spot clean fabric with mild detergent</td>
+                                </tr>
+                                <tr>
+                                    <th>Warranty</th>
+                                    <td>5-year manufacturer warranty on frame and construction</td>
+                                </tr>
+                                <tr>
+                                    <th>Country of Origin</th>
+                                    <td>India</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button class="btn btn-outline-primary">Load More Reviews</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Related Products -->
+    <div class="container related-products mb-5">
+        <h3 class="mb-4">You May Also Like</h3>
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="card related-product-card h-100">
+                    <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                        class="card-img-top" alt="Wooden Coffee Table">
+                    <div class="card-body-n">
+                        <h5 class="card-title text-white">Modern Coffee Table</h5>
+                        <div class="ratings mb-2">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="far fa-star text-warning"></i>
+                        </div>
+                        <p class="card-text price-tag mb-2" style="font-size: 1.2rem;">₹18,499</p>
+                        <button class="btn btn-sm btn-primary" onclick="addToCart()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card related-product-card h-100">
+                    <img src="https://images.unsplash.com/photo-1579656381226-5fc0f0100c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                        class="card-img-top" alt="Bookshelf">
+                    <div class="card-body-n">
+                        <h5 class="card-title text-white">Wooden Bookshelf</h5>
+                        <div class="ratings mb-2">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                        <p class="card-text price-tag mb-2" style="font-size: 1.2rem;">₹32,999</p>
+                        <button class="btn btn-sm btn-primary" onclick="addToCart()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card related-product-card h-100">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                        class="card-img-top" alt="Sofa">
+                    <div class="card-body-n">
+                        <h5 class="card-title text-white">Premium Sofa Set</h5>
+                        <div class="ratings mb-2">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="card-text price-tag mb-2" style="font-size: 1.2rem;">₹74,999</p>
+                        <button class="btn btn-sm btn-primary" onclick="addToCart()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card related-product-card h-100">
+                    <img src="https://images.unsplash.com/photo-1537182534312-f945134cce34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                        class="card-img-top" alt="Dining Table">
+                    <div class="card-body-n">
+                        <h5 class="card-title text-white">Dining Table Set</h5>
+                        <div class="ratings mb-2">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="far fa-star text-warning"></i>
+                        </div>
+                        <p class="card-text price-tag mb-2" style="font-size: 1.2rem;">₹45,499</p>
+                        <button class="btn btn-sm btn-primary" onclick="addToCart()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer bg-dark text-light py-5 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center text-md-center pe-5">
+                    <h3 class="footer-logo">Furniture Hub</h3>
+                    <p>Subscribe to Our Newsletter:</p>
+                    <p>Receive Updates on New Arrivals and Special Promotions!</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2 plc-white" placeholder="Your email here">
+                        <button class="btn btn-warning">Submit</button>
+                    </form>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h5>Categories</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Chairs</a></li>
+                        <li><a href="#" class="text-light">Tables</a></li>
+                        <li><a href="#" class="text-light">Sofas</a></li>
+                        <li><a href="#" class="text-light">Beds</a></li>
+                        <li><a href="#" class="text-light">Cabinets</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Shopping</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Payments</a></li>
+                        <li><a href="#" class="text-light">Delivery options</a></li>
+                        <li><a href="#" class="text-light">Buyer protection</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Customer Care</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Help center</a></li>
+                        <li><a href="#" class="text-light">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-light">Privacy Policy</a></li>
+                        <li><a href="#" class="text-light">Returns & Refund</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Pages</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">About Us</a></li>
+                        <li><a href="#" class="text-light">Shop</a></li>
+                        <li><a href="#" class="text-light">Contact Us</a></li>
+                        <li><a href="#" class="text-light">Services</a></li>
+                        <li><a href="#" class="text-light">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center">© 2025 Furniture Hub. All rights reserved</div>
+        </div>
+    </footer>
+    <div class="offcanvas offcanvas-top h-100 bg-black" id="offcanvas">
+        <div class="offcanvas-body d-flex align-items-center w-100 h-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10">
+                        <form action="" method="">
+                            <input type="search" class="form-control" placeholder="Search Here....">
+                        </form>
+                    </div>
+                    <div class="col-1 py-1" data-bs-theme="dark">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvas-end" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body text-center ">
+            <h4>Empty cart</h4>
+            <p class="text-light">No products in the cart.</p>
+            <button type="button" class="btn btn-warning text-light" data-bs-dismiss="offcanvas">Back to Home</button>
+        </div>
+    </div>
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-theme="dark">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-3">
+                    <div class="col">
+                        <div class="card text-white bg-dark p-3">
+                            <h3 class="text-center">Login</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label ps-3">Email</label>
+                                    <input type="email" class="form-control" placeholder="Enter your email">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label  ps-3">Password</label>
+                                    <input type="password" class="form-control" placeholder="Enter your password">
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100"> <a href="index.html"
+                                        class="text-white text-decoration-none"> Login </a></button>
+                            </form>
+                            <p class="text-center mt-3">Don't have an account? <a href="#signup" data-bs-toggle="modal"
+                                    class="text-white" data-bs-target="#signup">Sign up</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-theme="dark">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="col p-3">
+                        <div class="card text-white bg-dark p-3">
+                            <h3 class="text-center">Sign Up</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label p-3">Full Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter your full name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label p-3">Email</label>
+                                    <input type="email" class="form-control" placeholder="Enter your email">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label p-3">Password</label>
+                                    <input type="password" class="form-control " placeholder="Create a password">
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100 p-3">Sign Up</button>
+                            </form>
+                            <p class="text-center mt-3">Already have an account? <a href="#login" data-bs-toggle="modal"
+                                    class="text-white">Login</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <script src="assets/JS/bootstrap.bundle.min.js"></script>
+        <script>
+            // Initialize tooltips
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+
+            // Add to Cart functionality with enhanced toast
+            function addToCart() {
+                const toast = new bootstrap.Toast(document.getElementById('cartToast'), {
+                    animation: true,
+                    autohide: true,
+                    delay: 2000
+                });
+                toast.show();
+
+                // Optional: Update cart counter
+                const cartCount = document.querySelector('.badge');
+                if (cartCount) {
+                    let count = parseInt(cartCount.textContent);
+                    cartCount.textContent = count + 1;
+                }
+            }
+        </script>
+        <script>
+            const myModal = document.getElementById('myModal')
+            const myInput = document.getElementById('myInput')
+
+            myModal.addEventListener('shown.bs.modal', () => {
+                myInput.focus()
+            })
+        </script>
+</body>
+
+</html>

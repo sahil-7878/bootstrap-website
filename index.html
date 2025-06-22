@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design Studio - Pantry</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- medea  -->
+    <link rel="stylesheet" href="assets/css/media.css">
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/Logo/logo.png">
+
+</head>
+
+<body>
+    <div class="h-100vh position-relative overflow-hidden bg-dark">
+        <!-- Navbar -->
+        <header>
+            <div class="w-100 h-100 position-absolute bg-black z-1 opacity-50 blck-blur"></div>
+
+            <nav class="navbar navbar-expand-lg px-5">
+                <div class="container-fluid">
+                    <a href="./index.html" class="nav-brand nav-logo">
+                        <img src="assets/images/Logo/logo.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbar-toggler">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar-toggler">
+                        <ul class="navbar-nav mx-auto fw-semibold">
+                            <li class="nav-item">
+                                <a href="./index.html" class="nav-link text-light"> Home </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./shop.html" class="nav-link text-light"> Shop </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./service.html" class="nav-link text-light"> Services </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./about.html" class="nav-link text-light"> About </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./contact.html" class="nav-link text-light"> Contact </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="cart.html" class="nav-link text-light"> Cart </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="login-detail d-none d-lg-block">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item ">
+                                <a href="#" class=" text-light  px-1 " data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvas"><i class="bi bi-search"></i></a>
+                            </li>
+                            <li class="list-inline-item ">
+                                <a href="./account.html" class=" text-light  px-1" data-bs-toggle="modal"
+                                    data-bs-target="#login"><i class="bi bi-person position-relative"></i></a>
+                            </li>
+                            <li class="list-inline-item ">
+                                <a href="#" class="position-relative text-light px-1" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvas-end"><i class="bi bi-basket3"></i>
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">0</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <div class=" w-100 h-100">
+                <div class="slide-N position-absolute w-100 h-100 bg-cover bg-center active"></div>
+                <div class="slide-N position-absolute w-100 h-100 bg-cover bg-center"></div>
+                <div class="slide-N position-absolute w-100 h-100 bg-cover bg-center"></div>
+            </div>
+            <div class="hero-content position-relative z-2 text-white d-flex align-items-center ">
+                <div class="container-fluid px-5">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-lg-7 text-animetion-1">
+                            <h1>We design<br>every project<br>as a one-off</h1>
+                        </div>
+                        <div class="col-lg-4">
+                            <p class="mt-4 text-animetion-2">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                                voluptas sit aspernatur
+                                aut odit aut fugit sed quia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider Navigation -->
+            <!-- <div class="slider-nav position-absolute d-flex align-items-center gap-3 z-2">
+                <button
+                    class="nav-btn bg-transparent text-white rounded-circle d-flex align-items-center justify-content-center cursor-pointer prev"
+                    aria-label="Previous slide" data-bs-slide="prev" data-bs-target="#slider">
+                    <i class="bi bi-arrow-left"></i>
+                </button>
+                <button
+                    class="nav-btn bg-transparent text-white rounded-circle d-flex align-items-center justify-content-center cursor-pointer next"
+                    aria-label="Next slide" data-bs-target="#slider" data-bs-slide="next">
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+            </div> -->
+            <!-- Side Buttons -->
+            <div class="side-buttons position-absolute top-50 translate-middle-y z-3 d-flex flex-column gap-3">
+                <a href="#"
+                    class="side-btn d-flex align-items-center justify-content-center rounded-circle text-white text-decoration-none icon-animetion"
+                    aria-label="Cart">
+                    <i class="bi bi-cart-fill"></i>
+                </a>
+                <a href="#"
+                    class="side-btn d-flex align-items-center justify-content-center rounded-circle text-white text-decoration-none icon-animetion"
+                    aria-label="Contact">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+                <a href="#"
+                    class="side-btn d-flex align-items-center justify-content-center rounded-circle text-white text-decoration-none icon-animetion"
+                    aria-label="Phone">
+                    <i class="bi bi-telephone-fill"></i>
+                </a>
+            </div>
+    </div>
+
+    <!-- Update Chat Widget -->
+    <div class="chat-widget position-fixed d-flex align-items-center gap-2 z-3 ">
+        <button
+            class="chat-toggle rounded-circle bg-success border-0 text-white fs-4 cursor-pointer d-flex align-items-center justify-content-center d-flex align-items-center justify-content-center z-2">
+            <i class="bi bi-chat-text-fill"></i>
+        </button>
+        <div class="presale-popup bg-white p-3 px-4 rounded-pill fs-6 text-dark position-absolute opacity-0">
+            <span>Presale Chat</span>
+        </div>
+    </div>
+    <div class="preview"></div>
+    <section>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h6 class="text-uppercase text-warning">Home Decor Hub</h6>
+                    <h1 class="fw-bold text-white">Exceptional Furniture's For Indoor & Outdoor</h1>
+                    <p class="text-2">Ut eleifend mattis ligula, porta finibus urna gravida at. Aenean vehicula
+                        sodales arcu non mattis. Integer dapibus ac dui pretium blandit. Class aptent taciti
+                        sociosqu ad litora torquent per conubia nostra.</p>
+                    <img src="assets/images/Home/banner/home-decor-1.jpg" class="img-fluid rounded" alt="Living Room">
+                </div>
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <img src="assets/images/Home/banner/home-decor-2.jpg" class="img-fluid rounded mb-4"
+                        alt="Modern Living Room">
+                    <h3 class="fw-bold text-white">Discover Endless Designs</h3>
+                    <p class="text-2">Integer dapibus ac dui pretium blandit. Ut eleifend mattis ligula, porta
+                        finibus urna gravida at. Aenean vehicula sodales arcu non mattis.</p>
+                    <ul class="list-unstyled">
+                        <li class="highlight">✔ Ut eleifend mattis ligula, porta finibus urna gravida at</li>
+                        <li class="highlight">✔ Aenean vehicula sodales arcu non mattis</li>
+                        <li class="highlight">✔ Integer dapibus ac dui pretium blandit aptent.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- offer ob bad-room furniture  -->
+    <section>
+        <div class="container my-4">
+            <div class="banner-15 text-center text-md-start">
+                <h2>Save up to 15% at the IKEA Dream Bedroom Event</h2>
+                <p>Don't snooze on amazing savings! IKEA Family and IKEA Business Network members save now through
+                    3/17/25. Discount applied at checkout.<br>
+                    Not a member? <a href="#" class="text-white fw-bold">Join for free</a> to start saving today.
+                </p>
+                <a href="product-ditail.html"><button class="btn btn-custom mt-3">Shop sleep offers</button></a>
+            </div>
+        </div>
+
+        <div class="container mt-4 w-100">
+            <div class="row g-2 align-items-stretch">
+                <div class="col-md-6 d-flex">
+                    <div class="image-box w-100"> <a href="product-ditail.html">
+                            <img src="assets/images/Home/offer/offer-1.avif" alt="Bed Frame">
+                            <div class="overlay-line-1">
+                                <span>IKEA Family price</span>
+                                <strong>15% off all bed frames</strong>
+                            </div>
+                    </div></a>
+                </div>
+                <div class="col-md-6">
+                    <div class="row g-2 h-100">
+                        <div class="col-md-6 d-flex">
+                            <div class="image-box w-100"> <a href="product-ditail.html">
+                                    <img src="assets/images/Home/offer/offer-2.webp" alt="Nightstand">
+                                    <div class="overlay-line-1">
+                                        <span>IKEA Family price</span>
+                                        <strong>$100 off all FRIHETEN sleeper sofas</strong>
+                                    </div>
+                            </div></a>
+                        </div>
+                        <div class="col-md-6 d-flex">
+                            <div class="image-box w-100"> <a href="product-ditail.html">
+                                    <img src="assets/images/Home/offer/offer-3.avif" alt="Sleep Essentials">
+                                    <div class="overlay-line-1">
+                                        <span>IKEA Family price</span>
+                                        <strong>BOGO 50% off sleep essentials</strong>
+                                    </div>
+                            </div></a>
+                        </div>
+                        <div class="col-12 d-flex"> <a href="product-ditail.html">
+                                <div class="image-box w-100">
+                                    <img src="assets/images/Home/offer/offer-4.avif" alt="Sofa">
+                                    <div class="overlay-line-1">
+                                        <span>IKEA Family price</span>
+                                        <strong>$100 off all FRIHETEN sleeper sofas</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-5 display-4 fw-bold">Explore Our Furniture Collection</h2>
+        <div class="row g-4">
+            <!-- Sofas -->
+            <div class="col-md-4">
+                <div class="category-card">
+                    <img src="assets/images/Home/product/product-1.jpg" alt="Sofas" class="img-fluid">
+                    <div class="overlay">
+                        <h3>Sofas</h3>
+                        <p>Luxurious and Comfortable</p>
+                        <a href="shop.html">
+                            <button class="btn-explore">Explore</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Chairs -->
+            <div class="col-md-4">
+                <div class="category-card">
+                    <img src="assets/images/Home/product/product-2.jpg" alt="Chairs" class="img-fluid">
+                    <div class="overlay">
+                        <h3>Chairs</h3>
+                        <p>Elegant and Stylish</p>
+                        <a href="shop.html">
+                            <button class="btn-explore">Explore</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tables -->
+            <div class="col-md-4">
+                <div class="category-card">
+                    <img src="assets/images/Home/product/product-3.jpg" alt="Tables" class="img-fluid">
+                    <div class="overlay">
+                        <h3>Tables</h3>
+                        <p>Modern and Functional</p>
+                        <a href="shop.html">
+                            <button class="btn-explore">Explore</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Beds -->
+            <div class="col-md-4">
+                <div class="category-card">
+                    <img src="assets/images/Home/product/product-4.jpg" alt="Beds" class="img-fluid">
+                    <div class="overlay">
+                        <h3>Beds</h3>
+                        <p>Comfortable and Stylish</p>
+                        <a href="shop.html">
+                            <button class="btn-explore">Explore</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Cabinets -->
+            <div class="col-md-4">
+                <div class="category-card">
+                    <img src="assets/images/Home/product/product-5.jpg" alt="Cabinets" class="img-fluid">
+                    <div class="overlay">
+                        <h3>Cabinets</h3>
+                        <p>Spacious and Elegant</p>
+                        <a href="shop.html">
+                            <button class="btn-explore">Explore</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Lighting -->
+            <div class="col-md-4">
+                <div class="category-card">
+                    <img src="assets/images/Home/product/product-6.jpg" alt="Lighting" class="img-fluid">
+                    <div class="overlay">
+                        <h3>Lighting</h3>
+                        <p>Modern and Bright</p>
+                        <a href="shop.html">
+                            <button class="btn-explore">Explore</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="text-center mb-5 display-4 fw-bold">Our Designers' Studio</h2>
+            <div class="row g-4">
+                <!-- Team Member 1 -->
+                <div class="col-md-4">
+                    <div class="team-member-card">
+                        <img src="assets/images/Home/team/team-1.jpg" alt="Brianna Long">
+                        <div class="social-links">
+                            <a href="#" class="text-decoration-none">
+                                <!-- Facebook SVG Icon -->
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <!-- X (Twitter) SVG Icon -->
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <!-- Instagram SVG Icon -->
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <!-- LinkedIn SVG Icon -->
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
+                        <h3 class="text-center">Brianna Long</h3>
+                        <p class="text-center">Interior Designer</p>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="col-md-4">
+                    <div class="team-member-card">
+                        <img src="assets/images/Home/rdj.jpg" alt="Steven Moore">
+                        <div class="social-links">
+                            <a href="#" class="text-decoration-none">
+                                <!-- Facebook SVG Icon -->
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <!-- X (Twitter) SVG Icon -->
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <!-- Instagram SVG Icon -->
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <!-- LinkedIn SVG Icon -->
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
+                        <h3 class="text-center">Robert Downey Jr.</h3>
+                        <p class="text-center">Project Manager</p>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="col-md-4">
+                    <div class="team-member-card">
+                        <img src="assets/images/Home/team/team-3.jpg" alt="Jenny Sanders">
+                        <div class="social-links">
+                            <a href="#" class="text-decoration-none">
+                                <!-- Facebook SVG Icon -->
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <!-- X (Twitter) SVG Icon -->
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <!-- Instagram SVG Icon -->
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
+                        <h3 class="text-center">Jenny Sanders</h3>
+                        <p class="text-center">Visualization Specialist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testi manual  -->
+
+    <section class="testimonials py-5 bg-gradient">
+        <div class="container position-relative">
+            <h2 class="text-center fw-bold display-5 text-dark position-relative mb-5 text-white">What Our Clients
+                Say</h2>
+
+            <div class="position-absolute top-0 start-50 translate-middle opacity-10">
+                <i class="fas fa-quote-left display-1 text-primary"></i>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4 ">
+                    <div class="card shadow-lg border-0 p-4 text-center border-costum card-N">
+                        <div class="testimonial-image mx-auto position-relative">
+                            <img src="assets/images/Home/testimonial/img-1.jpg"
+                                class="rounded-circle border border-primary border-3" width="100" height="100">
+                        </div>
+                        <div class="testimonial-content mt-3">
+                            <p class="text-light fst-italic">"Working with this team has been an absolute pleasure.
+                                They delivered beyond our expectations and were always responsive to our needs."</p>
+                            <h4 class="fw-semibold">Sarah Johnson</h4>
+                            <p class="text-primary mb-0">CEO, Tech Solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow-lg border-0 p-4 text-center border-costum card-N">
+                        <div class="testimonial-image mx-auto position-relative">
+                            <img src="assets/images/Home/testimonial/img-2.jpg"
+                                class="rounded-circle border border-primary border-3" width="100" height="100">
+                        </div>
+                        <div class="testimonial-content mt-3">
+                            <p class="text-light fst-italic">"The attention to detail and professional approach made
+                                all the difference. Highly recommended for any business looking to grow."</p>
+                            <h4 class="fw-semibold">Michael Chen</h4>
+                            <p class="text-primary mb-0">Marketing Director, Growth Co</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow-lg border-0 p-4 text-center border-costum card-N">
+                        <div class="testimonial-image mx-auto position-relative">
+                            <img src="assets/images/Home/testimonial/img-3.jpg"
+                                class="rounded-circle border border-primary border-3" width="100" height="100">
+                        </div>
+                        <div class="testimonial-content mt-3">
+                            <p class="text-light fst-italic">"Outstanding service and results! They transformed our
+                                vision into reality with remarkable efficiency and creativity."</p>
+                            <h4 class="fw-semibold">Emma Davis</h4>
+                            <p class="text-primary mb-0">Founder, Creative Studios</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trend-products">
+
+    </section>
+    </main>
+    <footer class="footer bg-dark text-light py-5 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center text-md-center pe-5">
+                    <h3 class="footer-logo">Furniture Hub</h3>
+                    <p>Subscribe to Our Newsletter:</p>
+                    <p>Receive Updates on New Arrivals and Special Promotions!</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2 plc-white" placeholder="Your email here">
+                        <button class="btn btn-warning">Submit</button>
+                    </form>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h5>Categories</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Chairs</a></li>
+                        <li><a href="#" class="text-light">Tables</a></li>
+                        <li><a href="#" class="text-light">Sofas</a></li>
+                        <li><a href="#" class="text-light">Beds</a></li>
+                        <li><a href="#" class="text-light">Cabinets</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Shopping</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Payments</a></li>
+                        <li><a href="#" class="text-light">Delivery options</a></li>
+                        <li><a href="#" class="text-light">Buyer protection</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Customer Care</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Help center</a></li>
+                        <li><a href="#" class="text-light">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-light">Privacy Policy</a></li>
+                        <li><a href="#" class="text-light">Returns & Refund</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Pages</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">About Us</a></li>
+                        <li><a href="#" class="text-light">Shop</a></li>
+                        <li><a href="#" class="text-light">Contact Us</a></li>
+                        <li><a href="#" class="text-light">Services</a></li>
+                        <li><a href="#" class="text-light">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center">© 2025 Furniture Hub. All rights reserved</div>
+        </div>
+    </footer>
+    <div class="offcanvas offcanvas-top h-100 bg-black" id="offcanvas">
+        <div class="offcanvas-body d-flex align-items-center w-100 h-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10">
+                        <form action="" method="">
+                            <input type="search" class="form-control" placeholder="Search Here....">
+                        </form>
+                    </div>
+                    <div class="col-1 py-1" data-bs-theme="dark">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvas-end" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body text-center ">
+            <h4>Empty cart</h4>
+            <p class="text-light">No products in the cart.</p>
+            <button type="button" class="btn btn-warning text-light" data-bs-dismiss="offcanvas">Back to Home</button>
+        </div>
+    </div>
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-theme="dark">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-3">
+                    <div class="col">
+                        <div class="card text-white bg-dark p-3">
+                            <h3 class="text-center">Login</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label ps-3">Email</label>
+                                    <input type="email" class="form-control" placeholder="Enter your email">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label  ps-3">Password</label>
+                                    <input type="password" class="form-control" placeholder="Enter your password">
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100"> <a href="index.html"
+                                        class="text-white text-decoration-none"> Login </a></button>
+                            </form>
+                            <p class="text-center mt-3">Don't have an account? <a href="#signup" data-bs-toggle="modal"
+                                    class="text-white" data-bs-target="#signup">Sign up</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-theme="dark">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="col p-3">
+                        <div class="card text-white bg-dark p-3">
+                            <h3 class="text-center">Sign Up</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label p-3">Full Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter your full name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label p-3">Email</label>
+                                    <input type="email" class="form-control" placeholder="Enter your email">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label p-3">Password</label>
+                                    <input type="password" class="form-control " placeholder="Create a password">
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100 p-3">Sign Up</button>
+                            </form>
+                            <p class="text-center mt-3">Already have an account? <a href="#login" data-bs-toggle="modal"
+                                    class="text-white">Login</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+    <!-- Bootstrap Js -->
+    <script src="assets/JS/bootstrap.bundle.min.js"></script>
+    <script>
+        const myModal = document.getElementById('myModal')
+        const myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', () => {
+            myInput.focus()
+        })
+    </script>
+</body>
+
+</html>

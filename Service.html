@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <!-- bootstrap CSS Link -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <!-- Font Link -->
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/Logo/logo.png">
+</head>
+
+<body data-bs-theme="dark">
+    <header>
+        <div class="w-100 h-100 position-absolute  z-1 opacity-50 "></div>
+
+        <nav class="navbar navbar-expand-lg px-5">
+            <div class="container-fluid">
+                <a href="./index.html" class="nav-brand nav-logo">
+                    <img src="assets/images/Logo/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-toggler">
+                    <ul class="navbar-nav mx-auto fw-semibold">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link text-light"> Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./shop.html" class="nav-link text-light"> Shop </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./service.html" class="nav-link text-light"> Services </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./about.html" class="nav-link text-light"> About </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./contact.html" class="nav-link text-light"> Contact </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cart.html" class="nav-link text-light"> Cart </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="login-detail d-none d-lg-block">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item ">
+                            <a href="#" class=" text-light  px-1 " data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvas"><i class="bi bi-search"></i></a>
+                        </li>
+                        <li class="list-inline-item ">
+                            <a href="./account.html" class=" text-light  px-1" data-bs-toggle="modal"
+                                data-bs-target="#login"><i class="bi bi-person position-relative"></i></a>
+                        </li>
+                        <li class="list-inline-item ">
+                            <a href="#" class="position-relative text-light px-1" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvas-end"><i class="bi bi-basket3"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Banner -->
+        <section class="banner-h2">
+            <div class="container">
+                <div class="row">
+                    <div class="z-1 text-center">
+                        <h1 class="display-2 text-warning fw-bold">Our Services</h1>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service -->
+        <section>
+            <div class="container mt-5">
+                <h2 class="display-3 text-center text-warning mb-4">Our Services</h2>
+                <div class="row g-4">
+                    <!-- Service 1 -->
+                    <div class="col-md-4">
+                        <div class="card service-card text-center p-3">
+                            <i class="bi bi-truck text-warning fs-1"></i>
+                            <div class="card-body-h2">
+                                <h3 class="card-title text-uppercase py-3">Free Shipping</h3>
+                                <p class="card-text">Get your products delivered to your doorstep without any extra
+                                    cost.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="col-md-4">
+                        <div class="card service-card text-center p-3">
+                            <i class="bi bi-headset text-warning fs-1"></i>
+                            <div class="card-body-h2">
+                                <h3 class="card-title text-uppercase py-3">24/7 Customer Support</h3>
+                                <p class="card-text">Our customer support is available round the clock to assist you.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="col-md-4">
+                        <div class="card service-card text-center p-3">
+                            <i class="bi bi-arrow-return-right text-warning fs-1"></i>
+                            <div class="card-body-h2">
+                                <h3 class="card-title text-uppercase py-3">Easy Returns</h3>
+                                <p class="card-text">Enjoy hassle-free returns for a smooth shopping experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="col-md-4">
+                        <div class="card service-card text-center p-3">
+                            <i class="bi bi-credit-card text-warning fs-1"></i>
+                            <div class="card-body-h2">
+                                <h3 class="card-title text-uppercase py-3">Secure Payment</h3>
+                                <p class="card-text">Your transactions are safe with our secure payment options.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 5 -->
+                    <div class="col-md-4">
+                        <div class="card service-card text-center p-3">
+                            <i class="bi bi-gift text-warning fs-1"></i>
+                            <div class="card-body-h2">
+                                <h3 class="card-title text-uppercase py-3">Special Offers</h3>
+                                <p class="card-text">Avail exciting offers and discounts on your favorite products.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 6 -->
+                    <div class="col-md-4">
+                        <div class="card service-card text-center p-3">
+                            <i class="bi bi-globe text-warning fs-1"></i>
+                            <div class="card-body-h2">
+                                <h3 class="card-title text-uppercase py-3">Global Shipping</h3>
+                                <p class="card-text">We ship to numerous countries worldwide with reliable carriers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Reasons of our service -->
+        <section>
+            <div class="container mt-5">
+                <h2 class="display-4 text-center text-warning mb-4">Frequently Asked Questions</h2>
+                <div class="accordion" id="faqAccordion">
+                    <!-- Question 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                How can I track my order?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                You can track your order by logging into your account on our website and navigating to
+                                the "Order History" section. Here, you'll find real-time updates on the status of your
+                                order, including the current location and estimated delivery time. Additionally, you
+                                will receive email notifications at various stages of the delivery process to keep you
+                                informed.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                What is your return policy?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Our return policy allows you to return products within 30 days of purchase. The items
+                                must be in their original condition with all packaging and tags intact. To initiate a
+                                return, log into your account, go to the "Order History" section, select the order you
+                                want to return, and click on "Request Return." You will then receive a return
+                                authorization and detailed instructions on how to send the item back. If you need
+                                assistance, our customer support team is available to help you through the process.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                How do I contact customer support?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                You can contact our customer support team 24/7 via phone, email, or live chat. Our
+                                contact details are available on the "Contact Us" page of our website. For immediate
+                                assistance, you can use the live chat option to speak with one of our representatives.
+                                Additionally, our support team is active on social media platforms, and you can reach
+                                out to us through our official social media handles.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Is my payment information secure?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, your payment information is secure. We use advanced encryption and secure payment
+                                gateways to protect your data during transactions. Our website is PCI DSS (Payment Card
+                                Industry Data Security Standard) compliant, ensuring that your payment information is
+                                handled securely. We also offer additional security measures such as two-factor
+                                authentication and regular security audits to protect your account.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question 5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Do you offer international shipping?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, we offer international shipping to many countries. Please refer to our shipping
+                                policy page for more details on the available options and rates. You can calculate the
+                                estimated shipping cost and delivery time during the checkout process. We partner with
+                                reliable international carriers to ensure timely and safe delivery of your orders. If
+                                you have specific shipping requirements or need assistance with international shipping,
+                                our customer support team is here to help.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question 6 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                How can I redeem a promo code?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                To redeem a promo code, simply enter the code in the "Promo Code" field during the
+                                checkout process. The discount will be applied to your order total. Make sure to check
+                                the terms and conditions of the promo code, as some codes may have specific restrictions
+                                or expiration dates. If you encounter any issues while applying a promo code, our
+                                customer support team is available to assist you.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question 7 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                What are your payment methods?
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We offer a variety of payment methods to make your shopping experience convenient. You
+                                can pay using major credit cards (Visa, MasterCard, American Express), debit cards,
+                                digital wallets (PayPal, Apple Pay, Google Pay), and bank transfers. Additionally, we
+                                offer installment payment options for eligible orders. You can select your preferred
+                                payment method at checkout. If you have any questions about payment methods, our
+                                customer support team is here to help.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Process -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="display-4 text-center text-warning mb-4">Our Process</h2>
+                <div class="row text-center">
+                    <div class="col-md-3 process-step">
+                        <i class="bi bi-bag-check fs-1 text-warning mb-3 process-icon"></i>
+                        <h5>Step 1: Place Order</h5>
+                        <p>Choose your products and place your order on our website.</p>
+                    </div>
+                    <div class="col-md-3 process-step">
+                        <i class="bi bi-gear-fill fs-1 text-warning mb-3 process-icon"></i>
+                        <h5>Step 2: Processing</h5>
+                        <p>Our team processes your order quickly and efficiently.</p>
+                    </div>
+                    <div class="col-md-3 process-step">
+                        <i class="bi bi-truck fs-1 text-warning mb-3 process-icon"></i>
+                        <h5>Step 3: Shipping</h5>
+                        <p>Your order is shipped with a reliable carrier and can be tracked online.</p>
+                    </div>
+                    <div class="col-md-3 process-step">
+                        <i class="bi bi-house-door fs-1 text-warning mb-3 process-icon"></i>
+                        <h5>Step 4: Delivery</h5>
+                        <p>Receive your order at your doorstep and enjoy your purchase!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial -->
+        <section class="testimonial">
+            <div class="container mt-5">
+                <h2 class="display-4 text-center text-warning mb-4">What Our Customers Say</h2>
+                <div class="comma-st">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <div class="row g-4">
+                    <!-- Testimonial 1 -->
+                    <div class="col-md-4 mt-5">
+                        <div class="card testimonial-card text-center p-3">
+                            <img src="./assets/images/Testinaional/p-1.jpeg" alt="Customer-Photo" class="card-img-top">
+                            <div class="card-body-h">
+                                <h3 class="card-title text-uppercase py-3">John Doe</h3>
+                                <p class="card-text">"The free shipping service is fantastic! My products arrived
+                                    quickly and in perfect condition."</p>
+                                <span class="text-muted">Service: Free Shipping</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="col-md-4  mt-5">
+                        <div class="card testimonial-card text-center p-3">
+                            <img src="./assets/images/Testinaional/p-2.jpg" alt="Customer-Photo" class="card-img-top">
+                            <div class="card-body-h">
+                                <h3 class="card-title text-uppercase py-3">Jane Smith</h3>
+                                <p class="card-text">"I received excellent customer support when I had an issue. The
+                                    team resolved my problem in minutes."</p>
+                                <span class="text-muted">Service: 24/7 Customer Support</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="col-md-4 mt-5">
+                        <div class="card testimonial-card text-center p-3">
+                            <img src="./assets/images/Testinaional/p-3.jpg" alt="Customer-Photo" class="card-img-top">
+                            <div class="card-body-h">
+                                <h3 class="card-title text-uppercase  py-3">Mike Johnson</h3>
+                                <p class="card-text">"Returning a product was so easy,very nice service, and I got my
+                                    refund within two days. Absolutely hassle-free!"</p>
+                                <span class="text-muted">Service: Easy Returns</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comma-end">
+                <i class="fa-solid fa-quote-right"></i>
+            </div>
+        </section>
+    </main>
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center text-md-start pe-5">
+                    <h3 class="footer-logo">Furniture Hub</h3>
+                    <p>Subscribe to Our Newsletter:</p>
+                    <p>Receive Updates on New Arrivals and Special Promotions!</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your email here">
+                        <button class="btn btn-warning">Submit</button>
+                    </form>
+                    <div class="social-icons mt-3">
+                        <a href="#" class=" me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class=" me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class=" me-2"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="me-4"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h5>Categories</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Chairs</a></li>
+                        <li><a href="#" class="text-light">Tables</a></li>
+                        <li><a href="#" class="text-light">Sofas</a></li>
+                        <li><a href="#" class="text-light">Beds</a></li>
+                        <li><a href="#" class="text-light">Cabinets</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Shopping</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Payments</a></li>
+                        <li><a href="#" class="text-light">Delivery options</a></li>
+                        <li><a href="#" class="text-light">Buyer protection</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Customer Care</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Help center</a></li>
+                        <li><a href="#" class="text-light">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-light">Privacy Policy</a></li>
+                        <li><a href="#" class="text-light">Returns & Refund</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Pages</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">About Us</a></li>
+                        <li><a href="#" class="text-light">Shop</a></li>
+                        <li><a href="#" class="text-light">Contact Us</a></li>
+                        <li><a href="#" class="text-light">Services</a></li>
+                        <li><a href="#" class="text-light">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center">© 2025 Furniture Hub. All rights reserved</div>
+        </div>
+    </footer>
+    <div class="offcanvas offcanvas-top h-100 bg-black" id="offcanvas">
+        <div class="offcanvas-body d-flex align-items-center  w-100 h-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10">
+                        <form action="" method="">
+                            <input type="search" class="form-control" placeholder="Search Here....">
+                        </form>
+                    </div>
+                    <div class="col-1 py-1" data-bs-theme="dark">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvas-end" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body text-center ">
+            <h4>Empty cart</h4>
+            <p class="text-light">No products in the cart.</p>
+            <button type="button" class="btn btn-warning text-light" data-bs-dismiss="offcanvas">Back to Home</button>
+        </div>
+    </div>
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-theme="dark">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-3">
+                    <div class="col">
+                        <div class="card text-white bg-dark p-3">
+                            <h3 class="text-center">Login</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label ps-3">Email</label>
+                                    <input type="email" class="form-control" placeholder="Enter your email">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label  ps-3">Password</label>
+                                    <input type="password" class="form-control" placeholder="Enter your password">
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100"> <a href="index.html"
+                                        class="text-white text-decoration-none"> Login </a></button>
+                            </form>
+                            <p class="text-center mt-3">Don't have an account? <a href="#signup" data-bs-toggle="modal"
+                                    class="text-white" data-bs-target="#signup">Sign up</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-theme="dark">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="col p-3">
+                        <div class="card text-white bg-dark p-3">
+                            <h3 class="text-center">Sign Up</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label p-3">Full Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter your full name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label p-3">Email</label>
+                                    <input type="email" class="form-control" placeholder="Enter your email">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label p-3">Password</label>
+                                    <input type="password" class="form-control " placeholder="Create a password">
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100 p-3">Sign Up</button>
+                            </form>
+                            <p class="text-center mt-3">Already have an account? <a href="#login" data-bs-toggle="modal"
+                                    class="text-white">Login</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Furniture - Login & Sign Up</title>
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+   <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+  <style>
+    .gold-text-N-555 {
+      color: #FFD700;
+    }
+    .btn-gold-N-555 {
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    .btn-gold-N-555:hover {
+      transform: scale(1.05);
+      background-color: #e6b800; /* Slightly darker gold for hover */
+    }
+    .card-N-555 {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      transition: transform 0.3s ease;
+    }
+    .card-N-555:hover {
+      transform: translateY(-5px);
+    }
+    .form-control-N-555 {
+      background-color: #333;
+      border: 1px solid #555;
+      color: #fff;
+    }
+    .form-control-N-555:focus {
+      background-color: #444;
+      border-color: #FFD700;
+      box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+    }
+    .animation-fade-in-N-555 {
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .toast-N-555 {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 9999;
+    }
+    .tab-content-N-555 {
+      padding: 20px;
+    }
+    .nav-tabs-N-555 .nav-link-N-555 {
+      color: #fff;
+      border: none;
+      background-color: transparent;
+    }
+    .nav-tabs-N-555 .nav-link-N-555.active {
+      color: #FFD700;
+      border-bottom: 2px solid #FFD700;
+    }
+    .nav-tabs-N-555 .nav-link-N-555:hover {
+      color: #FFD700;
+    }
+  </style>
+</head>
+<body class="animation-fade-in-N-555 w-100 h-100">
+  <div class="container py-5 w-100 h-100">
+    <div class="row justify-content-center w-100">
+      <div class="col-md-6">
+        <div class="card card-N-555">
+          <div class="card-body">
+            <!-- Tabs for Login and Sign Up -->
+            <ul class="nav nav-tabs nav-tabs-N-555 nav-justified mb-4" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link nav-link-N-555 active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Login</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link nav-link-N-555" id="signup-tab" data-bs-toggle="tab" data-bs-target="#signup" type="button" role="tab" aria-controls="signup" aria-selected="false">Sign Up</button>
+              </li>
+            </ul>
+            <!-- Tab Content -->
+            <div class="tab-content tab-content-N-555" id="myTabContent">
+              <!-- Login Form -->
+              <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                <h3 class="gold-text-N-555 text-center mb-4">Welcome Back!</h3>
+                <form id="loginForm">
+                  <div class="mb-3">
+                    <label for="loginEmail" class="form-label text-white">Email Address</label>
+                    <input type="email" class="form-control form-control-N-555" id="loginEmail" placeholder="Enter your email" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="loginPassword" class="form-label text-white">Password</label>
+                    <input type="password" class="form-control form-control-N-555" id="loginPassword" placeholder="Enter your password" required>
+                  </div>
+                  <div class="d-grid">
+                    <button type="submit" class="btn btn-gold-N-555 btn-lg">Login</button>
+                  </div>
+                </form>
+              </div>
+              <!-- Sign Up Form -->
+              <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+                <h3 class="gold-text-N-555 text-center mb-4">Create an Account</h3>
+                <form id="signupForm">
+                  <div class="mb-3">
+                    <label for="signupName" class="form-label text-white">Full Name</label>
+                    <input type="text" class="form-control form-control-N-555" id="signupName" placeholder="Enter your name" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="signupEmail" class="form-label text-white">Email Address</label>
+                    <input type="email" class="form-control form-control-N-555" id="signupEmail" placeholder="Enter your email" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="signupPassword" class="form-label text-white">Password</label>
+                    <input type="password" class="form-control form-control-N-555" id="signupPassword" placeholder="Enter your password" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="signupConfirmPassword" class="form-label text-white">Confirm Password</label>
+                    <input type="password" class="form-control form-control-N-555" id="signupConfirmPassword" placeholder="Confirm your password" required>
+                  </div>
+                  <div class="d-grid">
+                    <button type="submit" class="btn btn-gold-N-555 btn-lg">Sign Up</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5.3 JS -->
+  <script src="assets/JS/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script>
+    // Show toast notification on form submission
+    const loginForm = document.getElementById('loginForm');
+    const signupForm = document.getElementById('signupForm');
+
+    loginForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Login successful!');
+    });
+
+    signupForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Sign up successful!');
+    });
+  </script>
+</body>
+</html>

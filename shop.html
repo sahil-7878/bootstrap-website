@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/Logo/logo.png">
+</head>
+
+<body data-bs-theme="dark">
+    <header>
+        <div class="w-100 h-100 position-absolute  z-1 opacity-50 "></div>
+
+        <nav class="navbar navbar-expand-lg px-5">
+            <div class="container-fluid">
+                <a href="./index.html" class="nav-brand nav-logo">
+                    <img src="assets/images/Logo/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-toggler">
+                    <ul class="navbar-nav mx-auto fw-semibold">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link text-light"> Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./shop.html" class="nav-link text-light"> Shop </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./service.html" class="nav-link text-light"> Services </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./about.html" class="nav-link text-light"> About </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./contact.html" class="nav-link text-light"> Contact </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cart.html" class="nav-link text-light"> Cart </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="login-detail d-none d-lg-block">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item ">
+                            <a href="#" class=" text-light  px-1 " data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvas"><i class="bi bi-search"></i></a>
+                        </li>
+                        <li class="list-inline-item ">
+                            <a href="./account.html" class=" text-light  px-1" data-bs-toggle="modal"
+                                data-bs-target="#login"><i class="bi bi-person position-relative"></i></a>
+                        </li>
+                        <li class="list-inline-item ">
+                            <a href="#" class="position-relative text-light px-1" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvas-end"><i class="bi bi-basket3"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="Filters mt-5">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <div class="categories-heading-D">
+                            <h3>Categories</h3>
+                        </div>
+                        <div class="categories-content">
+                            <form action="" method="">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Sofas & Sectionals
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Beds & Mattresses
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1">
+                                    <label class="form-check-label" for="flexCheckChecked1">
+                                        Bookcases & Shelving
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2">
+                                    <label class="form-check-label" for="flexCheckChecked2">
+                                        TV & Media Furniture
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3">
+                                    <label class="form-check-label" for="flexCheckChecked3">
+                                        Storage & Organization
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4">
+                                    <label class="form-check-label" for="flexCheckChecked4">
+                                        Tables & Desks
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked5">
+                                    <label class="form-check-label" for="flexCheckChecked5">
+                                        Lighting
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked6">
+                                    <label class="form-check-label" for="flexCheckChecked6">
+                                        Kitchen and Appliances
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="price-heading mt-4">
+                            <h3>Price-Range</h3>
+                        </div>
+                        <div class="price-content">
+                            <input type="range" class="form-range" id="customRange1">
+                            <p>Price: $10-$1000</p>
+                        </div>
+                        <div class="rating-heading">
+                            <h3>Ratings</h3>
+                        </div>
+                        <div class="rating-content">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    ★★★★★ (5 stars)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    ★★★★☆ & up (4 stars & up)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault3">
+                                <label class="form-check-label" for="flexRadioDefault3">
+                                    ★★★☆☆ & up (3 stars & up)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault4">
+                                <label class="form-check-label" for="flexRadioDefault4">
+                                    ★★☆☆☆ & up (2 stars & up)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault5">
+                                <label class="form-check-label" for="flexRadioDefault5">
+                                    ★☆☆☆☆ & up (1 star & up)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="brands-heading mt-3">
+                            <h3>Brands</h3>
+                        </div>
+                        <div class="brands-content">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked7">
+                                <label class="form-check-label" for="flexCheckChecked7">
+                                    Ashley Furniture
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked8">
+                                <label class="form-check-label" for="flexCheckChecked8">
+                                    Wayfair
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked9">
+                                <label class="form-check-label" for="flexCheckChecked9">
+                                    Herman Miller
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked10">
+                                <label class="form-check-label" for="flexCheckChecked10">
+                                    Pottery Barn
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-9 row row-gap-5">
+                        <div class="col-md-4">
+                            <div class="card-D">
+                                <img src="./assets/images/shop/sofa.jpg" class="product-img" alt="Modern Sofa"
+                                    height="200" class="card-img-top">
+                                <div class="card-body-d text-center">
+                                    <h5 class="card-title">Modern Sofa</h5>
+                                    <p class="card-text">$300</p>
+                                    <button type="button" class="btn btn-warning addtocartBtn">Add to Cart</button>
+                                    <button type="button" class="btn btn-outline-light " data-bs-toggle="modal"
+                                        data-bs-target="#Sofa"> View Detail </button>
+                                    <div class="modal fade" id="Sofa" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content mx-auto">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title fs-5" id="exampleModalLabel">Modern Sofa</h2>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>⭐ 4.8/5 (120 Reviews)| 🚚 Free Delivery</p>
+                                                    <p>✅ Material: Velvet + Solid Wood | Size: 86” W x 34” D x 30” H</p>
+                                                    <p> ✅ Colors: Beige | Gray | Navy | Green | Leg Finish: Black |
+                                                        Walnut</p>
+                                                    <p>✅ Features: Deep cushions, scratch-resistant, removable covers
+                                                    </p>
+                                                    <p>✅ Stock: ✅ In Stock | Delivery: 3-5 Days | Assembly: Minimal</p>
+
+                                                    <h4>A beautifully crafted wooden table</h4>
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-warning addtocartBtn">Add to
+                                                        Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-D">
+                                <img src="./assets/images/shop/bed.jpg" alt="Modern bed" height="200"
+                                    class="card-img-top">
+                                <div class="card-body-d text-center">
+                                    <h5 class="card-title">Luxury Bed</h5>
+                                    <p class="card-text">$300</p>
+                                    <button type="button" class="btn btn-warning addtocartBtn">Add to Cart</button>
+                                    <button type="button" class="btn  btn-outline-light" data-bs-toggle="modal"
+                                        data-bs-target="#Luxurybed"> View Detail </button>
+                                    <div class="modal fade" id="Luxurybed" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content mx-auto">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title fs-5" id="Luxurybed">Luxury Bed</h2>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>⭐ 4.9/5 (95 Reviews) | 🚚 Free Delivery</p>
+                                                    <p>✅ Material: Solid Wood + Premium Upholstery | Size: 80” W x 86” L
+                                                        x 50” H</p>
+                                                    <p> ✅ Colors: Beige | Gray | Navy | Green | Leg Finish: Black |
+                                                        Walnut</p>
+                                                    <p>✅ Colors: White | Gray | Navy | Charcoal | Frame Options: Wood |
+                                                        Metal</p>
+                                                    <p>✅ Features: Padded headboard, noise-free frame, under-bed storage
+                                                    </p>
+
+                                                    <h4>A beautifully crafted wooden table</h4>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-warning addtocartBtn">Add to
+                                                        Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-D">
+                                <img src="./assets/images/shop/table.jpg" alt="table" height="200" class="card-img-top">
+                                <div class="card-body-d text-center">
+                                    <h5 class="card-title">Table</h5>
+                                    <p class="card-text">$300</p>
+                                    <button type="button" class="btn btn-warning addtocartBtn">Add to Cart</button>
+                                    <button type="button" class="btn  btn-outline-light ms-2" data-bs-toggle="modal"
+                                        data-bs-target="#Luxurybed"> View Detail </button>
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title fs-5" id="Luxurybed">Table</h2>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>⭐ 4.9/5 (95 Reviews) | 🚚 Free Delivery</p>
+                                                    <p>✅ Material: Solid Wood + Premium Upholstery | Size: 80” W x 86” L
+                                                        x 50” H</p>
+                                                    <p> ✅ Colors: Beige | Gray | Navy | Green | Leg Finish: Black |
+                                                        Walnut</p>
+                                                    <p>✅ Colors: White | Gray | Navy | Charcoal | Frame Options: Wood |
+                                                        Metal</p>
+                                                    <p>✅ Features: Padded headboard, noise-free frame, under-bed storage
+                                                    </p>
+
+                                                    <h4>A beautifully crafted wooden table</h4>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-warning addtocartBtn">Add to
+                                                        Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-D">
+                                <img src="./assets/images/shop/tv furniture.jpg" alt="TV" height="200"
+                                    class="card-img-top">
+                                <div class="card-body-d text-center">
+                                    <h5 class="card-title">TV Furniture</h5>
+                                    <p class="card-text">$300</p>
+                                    <button type="button" class="btn btn-warning addtocartBtn">Add to Cart</button>
+                                    <button type="button" class="btn  btn-outline-light ms-2" data-bs-toggle="modal"
+                                        data-bs-target="#TV"> View Detail </button>
+                                    <div class="modal fade" id="TV" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content mx-auto">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title fs-5" id="Luxurybed">TV Furniture</h2>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>⭐ 4.9/5 (95 Reviews) | 🚚 Free Delivery</p>
+                                                    <p>✅ Material: Solid Wood + Premium Upholstery | Size: 80” W x 86” L
+                                                        x 50” H</p>
+                                                    <p> ✅ Colors: Beige | Gray | Navy | Green | Leg Finish: Black |
+                                                        Walnut</p>
+                                                    <p>✅ Colors: White | Gray | Navy | Charcoal | Frame Options: Wood |
+                                                        Metal</p>
+                                                    <p>✅ Features: Padded headboard, noise-free frame, under-bed storage
+                                                    </p>
+
+                                                    <h4>A beautifully crafted wooden table</h4>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-warning addtocartBtn">Add to
+                                                        Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-D">
+                                <img src="./assets/images/shop/bookcase.jpg" alt="Bookcase" height="200"
+                                    class="card-img-top">
+                                <div class="card-body-d text-center">
+                                    <h5 class="card-title">Modern Bookcase</h5>
+                                    <p class="card-text">$300</p>
+                                    <button type="button" class="btn btn-warning addtocartBtn">Add to Cart</button>
+                                    <button type="button" class="btn  btn-outline-light ms-2" data-bs-toggle="modal"
+                                        data-bs-target="#bookcase"> View Detail </button>
+                                    <div class="modal fade" id="bookcase" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content mx-auto">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title fs-5" id="Luxurybed">BookCase</h2>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>⭐ 4.9/5 (95 Reviews) | 🚚 Free Delivery</p>
+                                                    <p>✅ Material: Solid Wood + Premium Upholstery | Size: 80” W x 86” L
+                                                        x 50” H</p>
+                                                    <p> ✅ Colors: Beige | Gray | Navy | Green | Leg Finish: Black |
+                                                        Walnut</p>
+                                                    <p>✅ Colors: White | Gray | Navy | Charcoal | Frame Options: Wood |
+                                                        Metal</p>
+                                                    <p>✅ Features: Padded headboard, noise-free frame, under-bed storage
+                                                    </p>
+
+                                                    <h4>A beautifully crafted wooden table</h4>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-warning addtocartBtn">Add to
+                                                        Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-D">
+                                <img src="./assets/images/shop/dresser.jpg" alt="dresser" height="200"
+                                    class="card-img-top">
+                                <div class="card-body-d text-center">
+                                    <h5 class="card-title">Dresser</h5>
+                                    <p class="card-text">$300</p>
+                                    <button type="button" class="btn btn-warning addtocartBtn">Add to Cart</button>
+                                    <button type="button" class="btn  btn-outline-light ms-2" data-bs-toggle="modal"
+                                        data-bs-target="#dresser"> View Detail </button>
+                                    <div class="modal fade" id="dresser" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content mx-auto">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title fs-5" id="Luxurybed">Dresser</h2>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>⭐ 4.9/5 (95 Reviews) | 🚚 Free Delivery</p>
+                                                    <p>✅ Material: Solid Wood + Premium Upholstery | Size: 80” W x 86” L
+                                                        x 50” H</p>
+                                                    <p> ✅ Colors: Beige | Gray | Navy | Green | Leg Finish: Black |
+                                                        Walnut</p>
+                                                    <p>✅ Colors: White | Gray | Navy | Charcoal | Frame Options: Wood |
+                                                        Metal</p>
+                                                    <p>✅ Features: Padded headboard, noise-free frame, under-bed storage
+                                                    </p>
+
+                                                    <h4>A beautifully crafted wooden table</h4>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-warning addtocartBtn">Add to
+                                                        Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-D">
+                                <img src="./assets/images/shop/light.jpg" alt="Lamp" height="200" class="card-img-top">
+                                <div class="card-body-d text-center">
+                                    <h5 class="card-title">Night Lamp</h5>
+                                    <p class="card-text">$300</p>
+                                    <button type="button" class="btn btn-warning addtocartBtn">Add to Cart</button>
+                                    <button type="button" class="btn  btn-outline-light ms-2" data-bs-toggle="modal"
+                                        data-bs-target="#lamp"> View Detail </button>
+                                    <div class="modal fade" id="lamp" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content mx-auto">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title fs-5" id="Luxurybed">Night Lamp</h2>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>⭐ 4.9/5 (95 Reviews) | 🚚 Free Delivery</p>
+                                                    <p>✅ Material: Solid Wood + Premium Upholstery | Size: 80” W x 86” L
+                                                        x 50” H</p>
+                                                    <p> ✅ Colors: Beige | Gray | Navy | Green | Leg Finish: Black |
+                                                        Walnut</p>
+                                                    <p>✅ Colors: White | Gray | Navy | Charcoal | Frame Options: Wood |
+                                                        Metal</p>
+                                                    <p>✅ Features: Padded headboard, noise-free frame, under-bed storage
+                                                    </p>
+
+                                                    <h4>A beautifully crafted wooden table</h4>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-warning addtocartBtn">Add to
+                                                        Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-D">
+                                <img src="./assets/images/shop/storage.jpg" alt="Storage" height="200"
+                                    class="card-img-top">
+                                <div class="card-body-d text-center">
+                                    <h5 class="card-title">Luxury Storage Furniture</h5>
+                                    <p class="card-text">$300</p>
+                                    <button type="button" class="btn btn-warning addtocartBtn">Add to Cart</button>
+                                    <button type="button" class="btn  btn-outline-light ms-2" data-bs-toggle="modal"
+                                        data-bs-target="#storage"> View Detail </button>
+                                    <div class="modal fade" id="storage" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content mx-auto">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title fs-5" id="Luxurybed">Storage Furniture</h2>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>⭐ 4.9/5 (95 Reviews) | 🚚 Free Delivery</p>
+                                                    <p>✅ Material: Solid Wood + Premium Upholstery | Size: 80” W x 86” L
+                                                        x 50” H</p>
+                                                    <p> ✅ Colors: Beige | Gray | Navy | Green | Leg Finish: Black |
+                                                        Walnut</p>
+                                                    <p>✅ Colors: White | Gray | Navy | Charcoal | Frame Options: Wood |
+                                                        Metal</p>
+                                                    <p>✅ Features: Padded headboard, noise-free frame, under-bed storage
+                                                    </p>
+
+                                                    <h4>A beautifully crafted wooden table</h4>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-warning addtocartBtn">Add to
+                                                        Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-D">
+                                <img src="./assets/images/shop/bathroom.jpg" alt="Bathroom" height="200"
+                                    class="card-img-top">
+                                <div class="card-body-d text-center">
+                                    <h5 class="card-title">Luxury Bathroom</h5>
+                                    <p class="card-text">$300</p>
+                                    <button type="button" class="btn btn-warning addtocartBtn">Add to Cart</button>
+                                    <button type="button" class="btn  btn-outline-light ms-2" data-bs-toggle="modal"
+                                        data-bs-target="#bathroom"> View Detail </button>
+                                    <div class="modal fade" id="bathroom" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content mx-auto">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title fs-5" id="Luxurybed">Bathroom Furniture</h2>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>⭐ 4.9/5 (95 Reviews) | 🚚 Free Delivery</p>
+                                                    <p>✅ Material: Solid Wood + Premium Upholstery | Size: 80” W x 86” L
+                                                        x 50” H</p>
+                                                    <p> ✅ Colors: Beige | Gray | Navy | Green | Leg Finish: Black |
+                                                        Walnut</p>
+                                                    <p>✅ Colors: White | Gray | Navy | Charcoal | Frame Options: Wood |
+                                                        Metal</p>
+                                                    <p>✅ Features: Padded headboard, noise-free frame, under-bed storage
+                                                    </p>
+
+                                                    <h4>A beautifully crafted wooden table</h4>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-warning addtocartBtn">Add to
+                                                        Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 paginations d-flex justify-content-center mt-5">
+                <nav>
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="subscription mt-5 pb-4">
+            <div class="container">
+                <div class="row ">
+                    <div class="col pt-4">
+                        <img src="./assets/images/shop/subscribe logo.png" alt="logo" width="25" height="25">
+                        <span class="fw-semibold">Subscribe Newsletter And Get Discount</span>
+                    </div>
+                    <div class="col mt-4 p-1 bg-light-subtle rounded-4">
+                        <form action="" method="">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <input type="email" id="email" placeholder="Enter  your  email address"
+                                        class="search-input form-control bg-light-subtle">
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="#" class="btn btn-warning rounded-4 px-4 ">Search</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="toast-container position-fixed top-0 start-50">
+            <div id="Toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-body text-center">
+                    <img src="./assets/images/shop/tick.png" alt="tick" width="50" height="50" class="mb-2">
+                    <p> Successfully Added to Cart</p>
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="toast">OK</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center text-md-center pe-5">
+                    <h3 class="footer-logo">Furniture Hub</h3>
+                    <p>Subscribe to Our Newsletter:</p>
+                    <p>Receive Updates on New Arrivals and Special Promotions!</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your email here">
+                        <button class="btn btn-warning">Submit</button>
+                    </form>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h5>Categories</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Chairs</a></li>
+                        <li><a href="#" class="text-light">Tables</a></li>
+                        <li><a href="#" class="text-light">Sofas</a></li>
+                        <li><a href="#" class="text-light">Beds</a></li>
+                        <li><a href="#" class="text-light">Cabinets</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Shopping</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Payments</a></li>
+                        <li><a href="#" class="text-light">Delivery options</a></li>
+                        <li><a href="#" class="text-light">Buyer protection</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Customer Care</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Help center</a></li>
+                        <li><a href="#" class="text-light">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-light">Privacy Policy</a></li>
+                        <li><a href="#" class="text-light">Returns & Refund</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Pages</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">About Us</a></li>
+                        <li><a href="#" class="text-light">Shop</a></li>
+                        <li><a href="#" class="text-light">Contact Us</a></li>
+                        <li><a href="#" class="text-light">Services</a></li>
+                        <li><a href="#" class="text-light">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center">© 2025 Furniture Hub. All rights reserved</div>
+        </div>
+    </footer>
+    <div class="offcanvas offcanvas-top h-100 bg-black" id="offcanvas">
+        <div class="offcanvas-body d-flex align-items-center w-100 h-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10">
+                        <form action="" method="">
+                            <input type="search" class="form-control" placeholder="Search Here....">
+                        </form>
+                    </div>
+                    <div class="col-1 py-1" data-bs-theme="dark">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-end" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body text-center">
+            <h4>Empty cart</h4>
+            <p>No products in the cart.</p>
+            <button type="button" class="btn btn-warning text-light" data-bs-dismiss="offcanvas">Back to Home</button>
+        </div>
+    </div>
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-theme="dark">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-3">
+                    <div class="col">
+                        <div class="card text-white bg-dark p-3">
+                            <h3 class="text-center">Login</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label ps-3">Email</label>
+                                    <input type="email" class="form-control" placeholder="Enter your email">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label  ps-3">Password</label>
+                                    <input type="password" class="form-control" placeholder="Enter your password">
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100"> <a href="index.html"
+                                        class="text-white text-decoration-none"> Login </a></button>
+                            </form>
+                            <p class="text-center mt-3">Don't have an account? <a href="#signup" data-bs-toggle="modal"
+                                    class="text-white" data-bs-target="#signup">Sign up</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-theme="dark">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="col p-3">
+                        <div class="card text-white bg-dark p-3">
+                            <h3 class="text-center">Sign Up</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label p-3">Full Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter your full name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label p-3">Email</label>
+                                    <input type="email" class="form-control" placeholder="Enter your email">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label p-3">Password</label>
+                                    <input type="password" class="form-control " placeholder="Create a password">
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100 p-3">Sign Up</button>
+                            </form>
+                            <p class="text-center mt-3">Already have an account? <a href="#login" data-bs-toggle="modal"
+                                    class="text-white">Login</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./assets/JS/bootstrap.bundle.min.js"></script>
+        <script>
+            document.querySelectorAll('.addtocartBtn').forEach(button => {
+                button.addEventListener('click', () => {
+                    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(document.getElementById('Toast'));
+                    toastBootstrap.show();
+                });
+            });
+        </script>
+        <script>
+            const myModal = document.getElementById('myModal')
+            const myInput = document.getElementById('myInput')
+
+            myModal.addEventListener('shown.bs.modal', () => {
+                myInput.focus()
+            })
+        </script>
+
+</body>
+
+</html>
